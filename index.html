@@ -33,6 +33,25 @@
 
 
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '821585927971537',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     <body background="sgsunset.jpg">
 
     <!-- Begin page content -->
@@ -45,9 +64,28 @@
     </div>
 
     <footer class="footer">
+
+<!-- FB Like and share buttons -->
+      <!-- <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div> -->
+
+
       <div class="container">
         <p class="text-muted">&copy; 2016 Catalyst Group (Singapore)</p>
       </div>
+
+
+<!-- FB messenger bot connected to Message of Hope Page  -->
+      <!-- <div class="fb-messengermessageus"
+        messenger_app_id="821585927971537"
+        page_id="577194379124444"
+        color="blue"
+        size="standard"></div> -->
+
     </footer>
 
 
